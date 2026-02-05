@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1433</width>
+    <height>1063</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="8,0">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,20">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Perview</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="current">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>使用现有模型</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="customize">
+        <property name="text">
+         <string>自定义模型</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>139</width>
+          <height>13</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="train">
+        <property name="text">
+         <string>选择训练的图片</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="train_convert">
+        <property name="text">
+         <string>选择被转化图片</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="choose">
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string>迁移风格选择</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>candy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>composition_vii</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>the_wave</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>feathers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>la_muse</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>mosaic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>the_scream</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="convert">
+        <property name="text">
+         <string>转化</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="open">
+        <property name="text">
+         <string>打开摄像头</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="shoot">
+        <property name="text">
+         <string>拍摄</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="close">
+        <property name="text">
+         <string>关闭摄像头</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="fullScreen">
+        <property name="text">
+         <string>全屏模式</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="quitScreen">
+        <property name="text">
+         <string>退出全屏</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1433</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menustyleTransfer">
+    <property name="title">
+     <string>styleTransfer</string>
+    </property>
+   </widget>
+   <addaction name="menustyleTransfer"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
